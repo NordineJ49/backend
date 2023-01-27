@@ -21,7 +21,7 @@ const app = express();
 
 // methode use de l'appli express pour ajouter un middleware express.json(), qui permet de traiter les données envoyées au serveur dans un format JSON
 
-// methode use de l'appli express pour ajouter un middlkeware qui permet de definir les headers pour gérer les problèmes d'accès lié a la sécurité
+// methode use de l'appli express pour ajouter un middleware qui permet de definir les headers pour gérer les problèmes d'accès lié a la sécurité
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
